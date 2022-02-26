@@ -3,4 +3,4 @@ project(Excersise1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Excersise1 main.cpp)
+add_executable(Excersise1 main.cpp Pencil.cpp Pencil.h)

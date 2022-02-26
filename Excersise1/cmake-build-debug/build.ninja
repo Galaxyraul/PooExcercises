@@ -67,6 +67,12 @@ build CMakeFiles/Excersise1.dir/main.cpp.obj: CXX_COMPILER__Excersise1_Debug D$:
   OBJECT_DIR = CMakeFiles\Excersise1.dir
   OBJECT_FILE_DIR = CMakeFiles\Excersise1.dir
 
+build CMakeFiles/Excersise1.dir/Pencil.cpp.obj: CXX_COMPILER__Excersise1_Debug D$:/Poo/Excersises/Excersise1/Pencil.cpp || cmake_object_order_depends_target_Excersise1
+  DEP_FILE = CMakeFiles\Excersise1.dir\Pencil.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Excersise1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Excersise1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Excersise1
@@ -75,7 +81,7 @@ build CMakeFiles/Excersise1.dir/main.cpp.obj: CXX_COMPILER__Excersise1_Debug D$:
 #############################################
 # Link the executable Excersise1.exe
 
-build Excersise1.exe: CXX_EXECUTABLE_LINKER__Excersise1_Debug CMakeFiles/Excersise1.dir/main.cpp.obj
+build Excersise1.exe: CXX_EXECUTABLE_LINKER__Excersise1_Debug CMakeFiles/Excersise1.dir/main.cpp.obj CMakeFiles/Excersise1.dir/Pencil.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Excersise1.dir
