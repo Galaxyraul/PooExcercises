@@ -11,15 +11,15 @@ Pencil::Pencil(const std::string &hardness, const std::string &colour, const int
 
 Pencil::Pencil(const Pencil &orig):_hardness(orig._hardness),_colour(orig._colour),_size(orig._size) {}
 
-std::string Pencil::getHardness(){
+std::string Pencil::getHardness() const{
     return _hardness;
 }
 
-std::string Pencil::getColour() {
+std::string Pencil::getColour() const{
     return _colour;
 }
 
-int Pencil::getSize() {
+int Pencil::getSize() const {
     return _size;
 }
 
