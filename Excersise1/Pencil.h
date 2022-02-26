@@ -14,7 +14,7 @@ private:
 public:
     Pencil();
 
-    Pencil(const std::string& hardness,const std::string& colour,const int size );
+    Pencil(const std::string& hardness,const std::string& colour,const int size);
 
     Pencil(const Pencil& orig);
 
