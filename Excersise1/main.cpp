@@ -2,6 +2,14 @@
 #include "Book.h"
 
 int main() {
+    Pencil p1;
+    Pencil p2("F","Blue",180);
+    p1.setSize(200);
+    p1.setColour("Black");
+    p1.setHardness("HB4");
+    Pencil p3(p2);
+    std::cout << p3.getSize();
+    
     Book b1("Cixin Liu", "The three-body problem", "Sci-Fi", 2006, 20);
     Book b2;
     b2.setAuthor("JK Rowling");
