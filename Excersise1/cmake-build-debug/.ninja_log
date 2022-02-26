@@ -1,8 +1,4 @@
 # ninja log v5
-7	273	6675767116739664	CMakeFiles/Excersise1.dir/Pencil.cpp.obj	ceaf111010101285
-1	310	6675767117133467	CMakeFiles/Excersise1.dir/main.cpp.obj	8d2a38b776aed8ac
-3	322	6675767455535589	CMakeFiles/Excersise1.dir/main.cpp.obj	8d2a38b776aed8ac
 3	232	6675768110230413	CMakeFiles/Excersise1.dir/Pencil.cpp.obj	ceaf111010101285
-232	328	6675768111149672	Excersise1.exe	fa9236dd76690132
 3	290	6675769970807625	CMakeFiles/Excersise1.dir/main.cpp.obj	8d2a38b776aed8ac
 291	397	6675769971805706	Excersise1.exe	fa9236dd76690132
