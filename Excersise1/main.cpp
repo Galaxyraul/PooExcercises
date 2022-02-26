@@ -9,7 +9,7 @@ int main() {
     p1.setColour("Black");
     p1.setHardness("HB4");
     Pencil p3(p2);
-    std::cout << p3.getSize();
+    std::cout << p3.getSize() << std::endl;
     
     Book b1("Cixin Liu", "The three-body problem", "Sci-Fi", 2006, 20);
     Book b2;
