@@ -20,6 +20,8 @@ public:
 
     polynomial(const polynomial& orig);
 
+    virtual ~polynomial();
+
     int getA() const;
 
     void setA(int a);

@@ -3,6 +3,7 @@
 #include "Book.h"
 #include "FlowerPot.h"
 #include "polynomial.h"
+#include "Ellipse.h"
 
 int main() {
     Pencil p1;
@@ -28,8 +29,8 @@ int main() {
     FlowerPot f3(f2);
     std::cout<< "The pot has a capacity of:" << f3.getCapacity() << " L" << std::endl;
 
-    polynomial pol1();
-    polynomial pol2(1,2,3);
+    polynomial pol1;
+    polynomial pol2(1,2,-3);
     polynomial pol3(pol2);
     try{
         pol3.solveEquation(pol3);
@@ -38,5 +39,10 @@ int main() {
     }catch (std::string& e){
         std::cout << e;
     }
+
+    Ellipse e1;
+    Ellipse e2(20,40,80);
+    Ellipse e3(e2);
+    std::cout << "The focus of the ellipse is " << e3.getDistanceFocus() << " mm away" <<std::endl;
 
 }
