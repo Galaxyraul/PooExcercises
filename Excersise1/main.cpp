@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Pencil.h"
 #include "Book.h"
 
 int main() {
