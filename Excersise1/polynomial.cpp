@@ -54,3 +54,7 @@ double polynomial::getSol2() const {
     return sol2;
 }
 
+polynomial::~polynomial() {
+
+}
+
