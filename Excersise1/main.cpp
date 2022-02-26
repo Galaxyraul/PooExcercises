@@ -2,6 +2,7 @@
 #include "Pencil.h"
 #include "Book.h"
 #include "FlowerPot.h"
+#include "polynomial.h"
 
 int main() {
     Pencil p1;
@@ -26,5 +27,16 @@ int main() {
     FlowerPot f2("clay","Red",3);
     FlowerPot f3(f2);
     std::cout<< "The pot has a capacity of:" << f3.getCapacity() << " L" << std::endl;
+
+    polynomial pol1();
+    polynomial pol2(1,2,3);
+    polynomial pol3(pol2);
+    try{
+        pol3.solveEquation(pol3);
+        std::cout << "The first solution is: " << pol3.getSol1() << std::endl;
+        std::cout << "The second solution is " << pol3.getSol2() << std::endl;
+    }catch (std::string& e){
+        std::cout << e;
+    }
 
 }
