@@ -37,7 +37,7 @@ void polynomial::setC(int c) {
     this->_c = c;
 }
 
-void polynomial::solveEquation( polynomial) {
+void polynomial::solveEquation() {
         float gradient = (pow(_b, 2) - 4 * _a * _c);
         if (gradient < 0){
             throw std::string ("Roots of the polynomial cannot be found in the real field ");
