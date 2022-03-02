@@ -8,9 +8,9 @@
 
 class polynomial {
 private:
-    int _a = 0;
-    int _b = 0;
-    int _c = 0;
+    float _a = 0;
+    float _b = 0;
+    float _c = 0;
     double sol1 = 0;
     double sol2 = 0;
 public:
@@ -38,7 +38,7 @@ public:
 
     double getSol2() const;
 
-    void solveEquation ( polynomial);
+    void solveEquation ();
 };
 
 
