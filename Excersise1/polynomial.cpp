@@ -6,44 +6,48 @@
 #include <cmath>
 #include <string>
 
-polynomial::polynomial(int a, int b, int c) : _a(a), _b(b), _c(c) {}
+polynomial::polynomial(float a, float b, float c) : _a(a), _b(b), _c(c) {}
 
 polynomial::polynomial() {}
 
 polynomial::polynomial(const polynomial &orig)
-: _a(orig._a), _b(orig._b), _c(orig._c) {}
+: _a(orig._a), _b(orig._b), _c(orig._c),sol1(orig.sol1),sol2(orig.sol2),update(orig.update) {}
 
-int polynomial::getA() const {
+float polynomial::getA() const {
     return _a;
 }
 
-void polynomial::setA(int a) {
+void polynomial::setA(float a) {
+    this->update = false;
     this->_a = a;
 }
 
-int polynomial::getB() const {
+float polynomial::getB() const {
     return _b;
 }
 
-void polynomial::setB(int b) {
+void polynomial::setB(float b) {
+    this->update = false;
     this->_b = b;
 }
 
-int polynomial::getC() const {
+float polynomial::getC() const {
     return _c;
 }
 
-void polynomial::setC(int c) {
+void polynomial::setC(float c) {
+    this->update = false;
     this->_c = c;
 }
 
 void polynomial::solveEquation() {
-        float gradient = (pow(_b, 2) - 4 * _a * _c);
-        if (gradient < 0){
-            throw std::string ("Roots of the polynomial cannot be found in the real field ");
-        }
-        sol1 = (-_b + std::sqrt(gradient)) / (2 * _a);
-        sol2 = (-_b - std::sqrt(gradient)) / (2 * _a);
+    double gradient = (pow(_b, 2) - 4 * _a * _c);
+    if (gradient < 0){
+        throw std::string ("Roots of the polynomial cannot be found in the real field ");
+    }
+    sol1 = (-_b + std::sqrt(gradient)) / (2 * _a);
+    sol2 = (-_b - std::sqrt(gradient)) / (2 * _a);
+    this->update = true;
 }
 
 double polynomial::getSol1() const {

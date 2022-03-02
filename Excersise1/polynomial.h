@@ -13,26 +13,27 @@ private:
     float _c = 0;
     double sol1 = 0;
     double sol2 = 0;
+    bool update = false;
 public:
     polynomial();
 
-    polynomial(int a, int b, int c);
+    polynomial(float a, float b, float c);
 
     polynomial(const polynomial& orig);
 
     virtual ~polynomial();
 
-    int getA() const;
+    float getA() const;
 
-    void setA(int a);
+    void setA(float a);
 
-    int getB() const;
+    float getB() const;
 
-    void setB(int b);
+    void setB(float b);
 
-    int getC() const;
+    float getC() const;
 
-    void setC(int c);
+    void setC(float c);
 
     double getSol1() const;
 
