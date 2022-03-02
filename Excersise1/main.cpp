@@ -33,7 +33,7 @@ int main() {
     polynomial pol2(1,2,-3);
     polynomial pol3(pol2);
     try{
-        pol3.solveEquation(pol3);
+        pol3.solveEquation();
         std::cout << "The first solution is: " << pol3.getSol1() << std::endl;
         std::cout << "The second solution is " << pol3.getSol2() << std::endl;
     }catch (std::string& e){

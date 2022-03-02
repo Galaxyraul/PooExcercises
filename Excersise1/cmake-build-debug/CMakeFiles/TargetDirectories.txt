@@ -1,3 +1,3 @@
-D:/Poo/Excersises/Excersise1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/Poo/Excersises/Excersise1/cmake-build-debug/CMakeFiles/Excersise1.dir
-D:/Poo/Excersises/Excersise1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/cocol/OneDrive/Escritorio/CLionProjects/PooExcersises/Excersise1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/cocol/OneDrive/Escritorio/CLionProjects/PooExcersises/Excersise1/cmake-build-debug/CMakeFiles/Excersise1.dir
+C:/Users/cocol/OneDrive/Escritorio/CLionProjects/PooExcersises/Excersise1/cmake-build-debug/CMakeFiles/edit_cache.dir
